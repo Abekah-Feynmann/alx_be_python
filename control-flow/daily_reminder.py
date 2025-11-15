@@ -13,19 +13,19 @@ reminder = f"{task} is a {priority} priority task"
 match priority:
     case "high":
         if time_bound == "yes":
-            print(f"{reminder} that requires immediate attention today!")
+            print(f"Reminder: {reminder} that requires immediate attention today!")
         else:
-            print(f"{reminder}. Consider completing it when there is free time")
+            print(f"Reminder: {reminder}. Consider completing it when there is free time")
     case "medium":
         if time_bound == "yes":
-            print(f"{reminder}. However, it needs to be completed today!")
+            print(f"Reminder: {reminder}. However, it needs to be completed today!")
         else:
-            print(f"{reminder}. Consider completing it on your spare time")
+            print(f"Reminder: {reminder}. Consider completing it on your spare time")
     case "low":
         if time_bound == "yes":
-            print(f"{reminder}. Work on {task} during the final working hour of the day")
+            print(f"Reminder: {reminder}. Work on {task} during the final working hour of the day")
         else:
-            print(f"{reminder}. Consider completing it when you have free time")
+            print(f"Reminder: {reminder}. Consider completing it when you have free time")
     case _:
         print("Choose the appropriate responses")
 
