@@ -1,11 +1,11 @@
 #prompt a user to input a task description
-task = input("Input a task description: ").capitalize()
+task = input("Enter your task:").capitalize()
 
 #prompt the user to input the task's priority
-priority = input("What is the priority of the task? (high, medium, low): ").lower()
+priority = input("Priority (high, medium, low): ").lower()
 
 #prompt the user to indicate if the task is time-bound
-time_bound = input("Is the task time-bound? (yes, no): ").lower()
+time_bound = input("Is it time-bound? (yes, no): ").lower()
 
 reminder = f"{task} is a {priority} priority task"
 
