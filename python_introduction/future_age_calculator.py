@@ -1,8 +1,6 @@
 #prompt user for their age
-try:
-    current_age = int(input("How old are you?: "))
-except ValueError:
-    print("Input a correct integer")
+age = int(input("How old are you?: "))
+current_age = int(age)
 
 #calculate age in 2050
 future_age = 27 + current_age
