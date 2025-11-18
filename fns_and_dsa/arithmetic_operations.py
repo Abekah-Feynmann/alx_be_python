@@ -14,11 +14,11 @@ def perform_operation(num1, num2, operation):
             product = num1 * num2
             print(product)
         else:
-            try:
+            if num2 == 0:
+                print("Error: Division by zero")
+            else:
                 quotient = num1 / num2
                 print(quotient)
-            except ZeroDivisionError:
-                print("Divisor for division cannot be zero")
 
     else:
         raise ValueError("operation parameter must contain only one of the following: add, subtract, multiply, divide")
