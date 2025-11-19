@@ -1,7 +1,7 @@
 #import the datetime module
-import datetime
+from datetime import datetime, timedelta, date, time
 
-current_date = datetime.datetime.now()
+current_date = datetime.now()
 
 #create the display_current_datetime function
 def display_current_datetime():
@@ -10,7 +10,7 @@ def display_current_datetime():
 
 #calculate future date function
 def calculate_future_date(n):
-    future_date = current_date + datetime.timedelta(days=n)
+    future_date = current_date + timedelta(days=n)
     return future_date 
     
 
