@@ -8,7 +8,7 @@ def convert_to_celsius(fahrenheit):
     
 
 def convert_to_fahrenheit(celsius):
-    return (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) + 32
+    return 32 + (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius)
 
 def main():
     #prompt user for input for a temperature
