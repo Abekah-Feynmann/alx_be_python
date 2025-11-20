@@ -25,7 +25,7 @@ def main():
         print(f"{temp}°C is {fahrenheit_temp}°F")
     
     else:
-        print(f"Invalid temperature. Please enter a numeric value")
+        print(f"Invalid temperature. Please enter a numeric value. ")
 
 if __name__ == "__main__":
     main()
