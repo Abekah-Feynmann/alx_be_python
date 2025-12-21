@@ -31,6 +31,7 @@ def main():
     #Add books to the library
     my_library.add_book(classic_book)
     my_library.add_book(digital_novel)
+    my_library.add_book(paper_novel)
 
     #list all books in the library
     my_library.list_books()
