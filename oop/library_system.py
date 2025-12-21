@@ -35,7 +35,9 @@ class PrintBook(Book):
 
 class Library:
     def __init__(self, books:list | None = None):
-        self.books = books if books is not None else []
+        self.books = [] 
+        if books is not None:
+            self.books = books
 
     def __str__(self):
         return f"Library with {len(self.books)} books"
