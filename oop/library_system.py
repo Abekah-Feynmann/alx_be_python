@@ -1,3 +1,4 @@
+from typing import Optional, List
 #Defining the base class Book
 class Book:
     def __init__(self, title:str, author:str):
@@ -34,7 +35,7 @@ class PrintBook(Book):
         return f"PrintBook('{self.title}', '{self.author}', {self.page_count})"
 
 class Library:
-    def __init__(self, books:list | None = None):
+    def __init__(self, books:Optional[List] = None):
         self.books = [] 
         if books is not None:
             self.books = books
