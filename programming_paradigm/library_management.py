@@ -7,6 +7,13 @@ class Book:
     def __str__(self):
         return f"{self.title} by {self.author}"
 
+    def return_book(self):
+        if self._is_checked_out:
+            self._is_checked_out = False
+            return f"{self.title} has been returned successfully"
+        else:
+            return f"{self.title} was not checked out"
+
 class Library: 
     def __init__(self):
         self._books = []
@@ -28,11 +35,7 @@ class Library:
     def return_book(self, title):
         for book in self._books:
             if book.title == title:
-                if book._is_checked_out:
-                    book._is_checked_out = False
-                    return f"{book.title} has been returned successfully"
-                else:
-                    return f"{book.title} was not checked out"
+                return book.return_book()
         return f"{title} was not found in the library"
     
     def list_available_books(self):
