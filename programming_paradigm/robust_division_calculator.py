@@ -6,6 +6,6 @@ def safe_divide(numerator:float, denominator:float):
         quotient = float(numerator / denominator)
         return f"The result of the division is {quotient}"
     except ZeroDivisionError:
-        print("Cannot divide by zero.")
+        print("Error: Cannot divide by zero.")
     except ValueError:
-        print("Please enter numeric values only.")
+        print("Error: Please enter numeric values only.")
