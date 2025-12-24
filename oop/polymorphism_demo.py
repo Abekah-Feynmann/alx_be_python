@@ -20,8 +20,3 @@ class Circle(Shape):
         area = math.pi * self.radius** 2
         return area
 
-r = Rectangle(10, 3)
-print(r.area())
-
-c = Circle(7)
-print(c.area())
